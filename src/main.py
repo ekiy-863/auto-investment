@@ -12,3 +12,6 @@ for code in HOLDINGS.keys():
         lines.append(f"| {code} | {r.get('name','')[:8]} | {r.get('estimate_change',0):.2f}% |")
 open("README.md","w",encoding="utf-8").write("\n".join(lines))
 print("报告已生成")
+# 微信推送
+from notify.wechat import send_daily_report
+send_daily_report(content, MODE)
