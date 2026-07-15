@@ -1,0 +1,2 @@
+requests>=2.28.0
+pandas>=2.0.0open -e .github/workflows/daily_report.yml
