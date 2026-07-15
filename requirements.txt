@@ -1,2 +1,4 @@
 requests>=2.28.0
-pandas>=2.0.0 -e .github/workflows/daily_report.yml
+pandas>=2.0.0
+tickflow
+akshare
