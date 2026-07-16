@@ -1,29 +1,29 @@
 {
-  "update_time": "2026-07-16 12:59:54",
+  "update_time": "2026-07-16 13:23:53",
   "indexes": [
     {
       "name": "深证成指",
       "code": "399001.SZ",
-      "price": 14657.066,
-      "change_pct": -0.008277130656954415
+      "price": 14656.313,
+      "change_pct": -0.00832807996158441
     },
     {
       "name": "科创50",
       "code": "000688.SH",
-      "price": 1905.869,
-      "change_pct": -0.009564646199034011
-    },
-    {
-      "name": "上证指数",
-      "code": "000001.SH",
-      "price": 3923.203,
-      "change_pct": -0.008184644570275191
+      "price": 1887.559,
+      "change_pct": -0.019079923129450338
     },
     {
       "name": "创业板指",
       "code": "399006.SZ",
-      "price": 3738.959,
-      "change_pct": -0.017279925061187505
+      "price": 3741.982,
+      "change_pct": -0.016485382305693217
+    },
+    {
+      "name": "上证指数",
+      "code": "000001.SH",
+      "price": 3921.419,
+      "change_pct": -0.008635653247136096
     }
   ],
   "holdings": [
@@ -32,44 +32,44 @@
       "name": "华夏半导体C",
       "shares": 10000.0,
       "cost_nav": 1.25,
-      "current_nav": 2.5573,
-      "market_value": 25573.0,
-      "pnl": 13073.0,
-      "pnl_ratio": 104.584,
-      "change_today": -3.52
+      "current_nav": 2.5532,
+      "market_value": 25532.0,
+      "pnl": 13032.0,
+      "pnl_ratio": 104.256,
+      "change_today": -3.68
     },
     {
       "code": "024975",
       "name": "华泰柏瑞半导体C",
       "shares": 5000.0,
       "cost_nav": 1.38,
-      "current_nav": 2.6625,
-      "market_value": 13312.5,
-      "pnl": 6412.500000000001,
-      "pnl_ratio": 92.93478260869567,
-      "change_today": -3.52
+      "current_nav": 2.6583,
+      "market_value": 13291.5,
+      "pnl": 6391.500000000001,
+      "pnl_ratio": 92.63043478260872,
+      "change_today": -3.68
     },
     {
       "code": "025500",
       "name": "东方阿尔法科技C",
       "shares": 8000.0,
       "cost_nav": 0.92,
-      "current_nav": 2.0492,
-      "market_value": 16393.6,
-      "pnl": 9033.599999999999,
-      "pnl_ratio": 122.7391304347826,
-      "change_today": -3.48
+      "current_nav": 2.0433,
+      "market_value": 16346.4,
+      "pnl": 8986.4,
+      "pnl_ratio": 122.09782608695652,
+      "change_today": -3.76
     },
     {
       "code": "018816",
       "name": "方正富邦核心C",
       "shares": 6000.0,
       "cost_nav": 0.85,
-      "current_nav": 2.3764,
-      "market_value": 14258.4,
-      "pnl": 9158.4,
-      "pnl_ratio": 179.57647058823528,
-      "change_today": -3.02
+      "current_nav": 2.3699,
+      "market_value": 14219.4,
+      "pnl": 9119.4,
+      "pnl_ratio": 178.81176470588233,
+      "change_today": -3.29
     }
   ],
   "etf": [
@@ -78,70 +78,70 @@
       "name": "港股通互联网ETF广发",
       "price": 0.719,
       "change_pct": 0.05270863836017558,
-      "amount": 0.468607
+      "amount": 0.977149
     },
     {
       "code": "513770.SH",
       "name": "港股互联网ETF华宝",
-      "price": 0.381,
-      "change_pct": 0.049586776859504175,
-      "amount": 7.798491
+      "price": 0.382,
+      "change_pct": 0.0523415977961433,
+      "amount": 9.150912
     },
     {
       "code": "513040.SH",
       "name": "港股通互联网ETF易方达",
-      "price": 1.007,
-      "change_pct": 0.048958333333333263,
-      "amount": 7.863696
+      "price": 1.009,
+      "change_pct": 0.051041666666666596,
+      "amount": 9.069325
     },
     {
       "code": "520910.SH",
       "name": "港股通互联网ETF华夏",
-      "price": 0.683,
-      "change_pct": 0.04754601226993869,
-      "amount": 0.752367
+      "price": 0.685,
+      "change_pct": 0.05061349693251538,
+      "amount": 0.876922
+    },
+    {
+      "code": "159040.SZ",
+      "name": "港股通互联网ETF鹏华",
+      "price": 1.165,
+      "change_pct": 0.04766187050359706,
+      "amount": 0.333876
+    },
+    {
+      "code": "513720.SH",
+      "name": "港股互联网ETF国泰",
+      "price": 0.707,
+      "change_pct": 0.04740740740740728,
+      "amount": 0.993772
     },
     {
       "code": "520650.SH",
       "name": "港股通互联网ETF南方",
       "price": 0.646,
       "change_pct": 0.04700162074554299,
-      "amount": 2.87493
+      "amount": 3.031024
     },
     {
-      "code": "513720.SH",
-      "name": "港股互联网ETF国泰",
-      "price": 0.706,
-      "change_pct": 0.0459259259259258,
-      "amount": 0.926819
+      "code": "159280.SZ",
+      "name": "港股通互联网ETF汇添富",
+      "price": 0.736,
+      "change_pct": 0.046941678520625765,
+      "amount": 0.249708
     },
     {
-      "code": "159040.SZ",
-      "name": "港股通互联网ETF鹏华",
-      "price": 1.163,
-      "change_pct": 0.04586330935251792,
-      "amount": 0.315851
-    },
-    {
-      "code": "159568.SZ",
-      "name": "港股互联网ETF博时",
-      "price": 1.226,
-      "change_pct": 0.04518329070758733,
-      "amount": 1.849118
+      "code": "520790.SH",
+      "name": "港股通互联网ETF兴业",
+      "price": 0.893,
+      "change_pct": 0.046893317702227474,
+      "amount": 0.265584
     },
     {
       "code": "159792.SZ",
       "name": "港股通互联网ETF富国",
-      "price": 0.626,
-      "change_pct": 0.04507512520868118,
-      "amount": 31.897366
-    },
-    {
-      "code": "159202.SZ",
-      "name": "恒生互联网ETF万家",
-      "price": 0.868,
-      "change_pct": 0.04452466907340544,
-      "amount": 2.810132
+      "price": 0.627,
+      "change_pct": 0.04674457429048418,
+      "amount": 36.910868
     }
   ],
   "sector": {
@@ -201,7 +201,7 @@
     ]
   },
   "total_cost": 31860.0,
-  "total_market": 69537.5,
-  "total_pnl": 37677.5,
-  "total_pnl_ratio": 118.2595731324545
+  "total_market": 69389.3,
+  "total_pnl": 37529.3,
+  "total_pnl_ratio": 117.79441305712493
 }
