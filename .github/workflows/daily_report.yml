@@ -24,7 +24,6 @@ jobs:
         run: python src/generate_dashboard.py
         env:
           TICKFLOW_KEY: ${{ secrets.TICKFLOW_KEY }}
-          MX_APIKEY: ${{ secrets.MX_APIKEY }}
 
       - name: Commit and push
         run: |
