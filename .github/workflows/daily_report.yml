@@ -20,22 +20,16 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run report
-        run: python src/main.py
-        env:
-          TICKFLOW_KEY: ${{ secrets.TICKFLOW_KEY }}
-          MX_APIKEY: ${{ secrets.MX_APIKEY }}
-          SERVERCHAN_KEY: ${{ secrets.SERVERCHAN_KEY }}
-
       - name: Generate dashboard data
         run: python src/generate_dashboard.py
         env:
           TICKFLOW_KEY: ${{ secrets.TICKFLOW_KEY }}
+          MX_APIKEY: ${{ secrets.MX_APIKEY }}
 
       - name: Commit and push
         run: |
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
-          git add README.md docs/data/dashboard.json
-          git commit -m "Update daily report and dashboard $(date '+%Y-%m-%d %H:%M')" || exit 0
+          git add docs/data/dashboard.json
+          git commit -m "Update dashboard $(date '+%Y-%m-%d %H:%M')" || exit 0
           git push
