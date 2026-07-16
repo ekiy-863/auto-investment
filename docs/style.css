@@ -95,8 +95,8 @@ td {
     border-bottom: 1px solid #f0f0f0;
 }
 tr:hover td { background: #fafafa; }
-.positive { color: #22c55e; }
-.negative { color: #ef4444; }
+.positive { color: #ef4444; }  /* 红色 → 涨 */
+.negative { color: #22c55e; }  /* 绿色 → 跌 */
 
 /* 图表 */
 .charts-row {
