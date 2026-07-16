@@ -2,7 +2,42 @@
 const colors = ['#22c55e', '#ef4444', '#3b82f6', '#f59e0b', '#8b5cf6', '#ec4899', '#14b8a6', '#f97316'];
 
 // 加载数据
-async function loadData() {
+async function loadData() {// 刷新数据（触发 GitHub Actions）
+function refreshData() {
+    const btn = document.getElementById('refreshBtn');
+    btn.disabled = true;
+    btn.textContent = '⏳ 正在触发...';
+    document.getElementById('updateTime').textContent = '⏳ 正在刷新数据...';
+
+    // 通过 GitHub API 触发 Actions
+    fetch('https://api.github.com/repos/ekiy-863/auto-investment/actions/workflows/daily_report.yml/dispatches', {
+        method: 'POST',
+        headers: {
+            'Authorization': 'token YOUR_GITHUB_TOKEN',  // 这里不能用硬编码，见下方说明
+            'Accept': 'application/vnd.github.v3+json'
+        },
+        body: JSON.stringify({ ref: 'main' })
+    })
+    .then(response => {
+        if (response.ok) {
+            document.getElementById('updateTime').textContent = '✅ 已触发刷新，约2-3分钟后更新';
+            btn.textContent = '✅ 已触发';
+            // 2分钟后自动重新加载数据
+            setTimeout(() => {
+                loadData();
+                btn.disabled = false;
+                btn.textContent = '🔄 刷新数据';
+            }, 120000);
+        } else {
+            throw new Error('触发失败');
+        }
+    })
+    .catch(() => {
+        document.getElementById('updateTime').textContent = '❌ 触发失败，请前往 GitHub Actions 手动运行';
+        btn.disabled = false;
+        btn.textContent = '🔄 刷新数据';
+    });
+}
     try {
         const resp = await fetch('https://ekiy-863.github.io/auto-investment/data/dashboard.json?t=' + Date.now());
         if (!resp.ok) throw new Error('数据加载失败');
