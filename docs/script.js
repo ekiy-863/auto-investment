@@ -128,7 +128,7 @@ function renderCharts(holdings) {
         yAxis: { type: 'value', axisLabel: { formatter: v => v.toFixed(0) } },
         series: [{
             type: 'bar',
-            data: filtered.map(h => ({ value: h.pnl, itemStyle: { color: h.pnl >= 0 ? '#22c55e' : '#ef4444' } })),
+            data: filtered.map(h => ({ value: h.pnl, itemStyle: { color: h.pnl >= 0 ? '#ef4444' : '#22c55e' } })),
             barWidth: '40%'
         }]
     });
