@@ -73,8 +73,11 @@ def generate_dashboard():
     data["total_pnl_ratio"] = (total_market - total_cost) / total_cost * 100 if total_cost > 0 else 0
     
     # 5. 保存到 docs 目录
+    os.makedirs("docs/data", exist_ok=True)
     with open("docs/data/dashboard.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
+    
+    print("✅ dashboard.json 生成成功")
 
 if __name__ == "__main__":
     generate_dashboard()
