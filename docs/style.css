@@ -34,12 +34,12 @@ body {
 }
 .card {
     text-align: center;
-    padding: 8px 20px;
+    padding: 8px 24px;
     background: #f8f9fa;
     border-radius: 10px;
 }
 .card .label { font-size: 12px; color: #888; }
-.card .value { font-size: 20px; font-weight: 700; }
+.card .value { font-size: 22px; font-weight: 700; }
 .value.positive { color: #22c55e; }
 .value.negative { color: #ef4444; }
 
@@ -53,23 +53,26 @@ body {
 }
 .section h2 { font-size: 18px; margin-bottom: 16px; }
 .section h3 { font-size: 15px; margin-bottom: 12px; }
-.section h4 { font-size: 13px; margin: 10px 0 6px; color: #555; }
+.section h4 { font-size: 14px; margin-bottom: 10px; color: #555; }
 
 /* 宽基指数 */
 .index-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 12px;
+}
+@media (max-width: 600px) {
+    .index-grid { grid-template-columns: 1fr 1fr; }
 }
 .index-item {
     text-align: center;
-    padding: 14px;
+    padding: 16px;
     background: #f8f9fa;
     border-radius: 10px;
     font-weight: 600;
     font-size: 14px;
 }
-.idx-price { font-size: 22px; font-weight: 700; display: block; margin: 4px 0; }
+.idx-price { font-size: 24px; font-weight: 700; display: block; margin: 4px 0; }
 .idx-change { font-size: 16px; font-weight: 600; }
 .idx-change.positive { color: #22c55e; }
 .idx-change.negative { color: #ef4444; }
@@ -101,22 +104,28 @@ tr:hover td { background: #fafafa; }
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
+@media (max-width: 768px) {
+    .charts-row { grid-template-columns: 1fr; }
+}
 .chart-box { min-width: 0; }
 
-/* 行业资金 */
-.sector-grid {
+/* 市场数据 */
+.market-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
-.sector-col table { font-size: 13px; }
-.sector-col td { padding: 6px 10px; }
-
-/* 响应式 */
-@media (max-width: 768px) {
-    .header { flex-direction: column; align-items: stretch; gap: 12px; }
-    .summary-cards { justify-content: space-around; }
-    .charts-row { grid-template-columns: 1fr; }
-    .sector-grid { grid-template-columns: 1fr; }
-    .index-grid { grid-template-columns: 1fr 1fr; }
+@media (max-width: 1024px) {
+    .market-grid { grid-template-columns: 1fr 1fr; }
 }
+@media (max-width: 600px) {
+    .market-grid { grid-template-columns: 1fr; }
+}
+.market-col {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 12px;
+}
+.market-col h4 { margin-top: 0; }
+.market-col table { font-size: 13px; }
+.market-col td { padding: 4px 8px; }
