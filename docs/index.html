@@ -57,28 +57,36 @@
             </div>
         </section>
 
-        <!-- ETF涨幅 TOP5 -->
+        <!-- 市场数据 -->
         <section class="section">
-            <h2>📊 ETF涨幅 TOP5</h2>
-            <div class="table-wrapper">
-                <table id="etfTable">
-                    <thead><tr><th>代码</th><th>名称</th><th>最新价</th><th>涨跌幅</th></tr></thead>
-                    <tbody id="etfBody"></tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- 行业资金流向 -->
-        <section class="section">
-            <h2>📊 行业资金流向</h2>
-            <div class="sector-grid" id="sectorGrid">
-                <div class="sector-col">
-                    <h4>💰 主力净流入 TOP5</h4>
-                    <table class="sector-table"><tbody id="sectorInflow"></tbody></table>
+            <h2>📊 市场数据</h2>
+            <div class="market-grid">
+                <div class="market-col">
+                    <h4>📈 ETF涨幅 TOP5</h4>
+                    <div class="table-wrapper">
+                        <table id="etfTable">
+                            <thead><tr><th>代码</th><th>名称</th><th>最新价</th><th>涨跌幅</th></tr></thead>
+                            <tbody id="etfBody"></tbody>
+                        </table>
+                    </div>
                 </div>
-                <div class="sector-col">
+                <div class="market-col">
+                    <h4>💰 主力净流入 TOP5</h4>
+                    <div class="table-wrapper">
+                        <table id="sectorInflowTable">
+                            <thead><tr><th>行业</th><th>净流入(亿)</th></tr></thead>
+                            <tbody id="sectorInflowBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="market-col">
                     <h4>💸 主力净流出 TOP5</h4>
-                    <table class="sector-table"><tbody id="sectorOutflow"></tbody></table>
+                    <div class="table-wrapper">
+                        <table id="sectorOutflowTable">
+                            <thead><tr><th>行业</th><th>净流入(亿)</th></tr></thead>
+                            <tbody id="sectorOutflowBody"></tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </section>
