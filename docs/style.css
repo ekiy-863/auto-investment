@@ -74,8 +74,8 @@ body {
 }
 .idx-price { font-size: 24px; font-weight: 700; display: block; margin: 4px 0; }
 .idx-change { font-size: 16px; font-weight: 600; }
-.idx-change.positive { color: #22c55e; }
-.idx-change.negative { color: #ef4444; }
+.idx-change.positive { color: #ef4444; }  /* 涨=红色 */
+.idx-change.negative { color: #22c55e; }  /* 跌=绿色 */
 
 /* 表格 */
 .table-wrapper { overflow-x: auto; }
