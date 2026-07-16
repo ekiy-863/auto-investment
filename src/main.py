@@ -152,7 +152,16 @@ tech_lines = format_technical_for_report(tech_results)
 
 
 # ============================================================
-# 9. 场外基金预警 + 买卖动态提醒
+# 9. 投资决策
+# ============================================================
+print("正在生成投资决策...")
+decisions = generate_decisions(fund_data, tech_results, sector_data, etf_change)
+verification_results = check_verification_items(index_data, sector_data, etf_change, fund_data)
+decision_lines = format_decisions_for_report(decisions, verification_results)
+
+
+# ============================================================
+# 10. 场外基金预警 + 买卖动态提醒
 # ============================================================
 print("正在生成预警和买卖信号...")
 fund_alerts, fund_signals = generate_fund_alerts(fund_data, tech_results, MODE)
@@ -160,7 +169,7 @@ alert_lines = format_alerts_for_report(fund_alerts, fund_signals)
 
 
 # ============================================================
-# 10. 标题
+# 11. 标题
 # ============================================================
 if MODE == 'morning':
     title = f"# 📊 投资观察 - {now}（10:30预警版）"
@@ -169,7 +178,7 @@ else:
 
 
 # ============================================================
-# 11. 组装报告
+# 12. 组装报告
 # ============================================================
 lines = [title, ""]
 lines.extend(index_lines)
@@ -179,6 +188,7 @@ lines.extend(news_lines)
 lines.extend(main_line_lines)
 lines.extend(etf_compare_lines)
 lines.extend(tech_lines)
+lines.extend(decision_lines)
 lines.extend(alert_lines)
 lines.append("")
 lines.append("## 📈 基金估算净值")
@@ -205,7 +215,7 @@ if MODE == 'afternoon':
 
 
 # ============================================================
-# 12. 输出
+# 13. 输出
 # ============================================================
 content = "\n".join(lines)
 open("README.md", "w", encoding="utf-8").write(content)
@@ -215,33 +225,8 @@ print(content)
 print("==============================")
 print("报告已生成")
 
-
-# 在文件顶部添加导入
-from analysis.decision import generate_decisions, check_verification_items, format_decisions_for_report
-
-# 在技术分析之后、标题之前添加决策生成
-print("正在生成投资决策...")
-decisions = generate_decisions(fund_data, tech_results, sector_data, etf_change)
-verification_results = check_verification_items(index_data, sector_data, etf_change, fund_data)
-decision_lines = format_decisions_for_report(decisions, verification_results)
-
-# 在报告组装中，把 decision_lines 插入到技术分析和基金净值之间
-lines = [title, ""]
-lines.extend(index_lines)
-lines.extend(etf_lines)
-lines.extend(sector_lines)
-lines.extend(news_lines)
-lines.extend(main_line_lines)
-lines.extend(etf_compare_lines)
-lines.extend(tech_lines)
-lines.extend(decision_lines)  # ⭐ 新增：决策指令
-lines.append("")
-lines.append("## 📈 基金估算净值")
-# ... 后面不变
-
-
 # ============================================================
-# 13. 微信推送
+# 14. 微信推送
 # ============================================================
 from notify.wechat import send_daily_report
 send_daily_report(content, MODE)
