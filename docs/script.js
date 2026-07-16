@@ -1,43 +1,13 @@
-// 颜色
-const colors = ['#22c55e', '#ef4444', '#3b82f6', '#f59e0b', '#8b5cf6', '#ec4899', '#14b8a6', '#f97316'];
+// ============================================================
+// 颜色配置
+// ============================================================
+const colors = ['#ef4444', '#22c55e', '#3b82f6', '#f59e0b', '#8b5cf6', '#ec4899', '#14b8a6', '#f97316'];
 
+
+// ============================================================
 // 加载数据
-async function loadData() {// 刷新数据（触发 GitHub Actions）
-function refreshData() {
-    const btn = document.getElementById('refreshBtn');
-    btn.disabled = true;
-    btn.textContent = '⏳ 正在触发...';
-    document.getElementById('updateTime').textContent = '⏳ 正在刷新数据...';
-
-    // 通过 GitHub API 触发 Actions
-    fetch('https://api.github.com/repos/ekiy-863/auto-investment/actions/workflows/daily_report.yml/dispatches', {
-        method: 'POST',
-        headers: {
-            'Authorization': 'token YOUR_GITHUB_TOKEN',  // 这里不能用硬编码，见下方说明
-            'Accept': 'application/vnd.github.v3+json'
-        },
-        body: JSON.stringify({ ref: 'main' })
-    })
-    .then(response => {
-        if (response.ok) {
-            document.getElementById('updateTime').textContent = '✅ 已触发刷新，约2-3分钟后更新';
-            btn.textContent = '✅ 已触发';
-            // 2分钟后自动重新加载数据
-            setTimeout(() => {
-                loadData();
-                btn.disabled = false;
-                btn.textContent = '🔄 刷新数据';
-            }, 120000);
-        } else {
-            throw new Error('触发失败');
-        }
-    })
-    .catch(() => {
-        document.getElementById('updateTime').textContent = '❌ 触发失败，请前往 GitHub Actions 手动运行';
-        btn.disabled = false;
-        btn.textContent = '🔄 刷新数据';
-    });
-}
+// ============================================================
+async function loadData() {
     try {
         const resp = await fetch('https://ekiy-863.github.io/auto-investment/data/dashboard.json?t=' + Date.now());
         if (!resp.ok) throw new Error('数据加载失败');
@@ -51,18 +21,24 @@ function refreshData() {
     }
 }
 
-// 渲染所有
+
+// ============================================================
+// 渲染所有数据
+// ============================================================
 function renderAll(data) {
     // 账户汇总
     const totalCost = document.getElementById('totalCost');
     totalCost.textContent = data.total_cost ? '¥' + data.total_cost.toFixed(2) : '--';
+    
     const totalMarket = document.getElementById('totalMarket');
     totalMarket.textContent = data.total_market ? '¥' + data.total_market.toFixed(2) : '--';
+    
     const totalPnl = document.getElementById('totalPnl');
     if (data.total_pnl !== undefined && data.total_pnl !== null) {
         totalPnl.textContent = (data.total_pnl >= 0 ? '+' : '') + data.total_pnl.toFixed(2);
         totalPnl.className = 'value ' + (data.total_pnl >= 0 ? 'positive' : 'negative');
     }
+    
     const totalPnlRatio = document.getElementById('totalPnlRatio');
     if (data.total_pnl_ratio !== undefined && data.total_pnl_ratio !== null) {
         totalPnlRatio.textContent = (data.total_pnl_ratio >= 0 ? '+' : '') + data.total_pnl_ratio.toFixed(2) + '%';
@@ -76,6 +52,10 @@ function renderAll(data) {
     renderCharts(data.holdings);
 }
 
+
+// ============================================================
+// 宽基指数
+// ============================================================
 function renderIndexes(indexes) {
     if (!indexes) return;
     const map = {};
@@ -92,6 +72,10 @@ function renderIndexes(indexes) {
     });
 }
 
+
+// ============================================================
+// 持仓盈亏明细
+// ============================================================
 function renderHoldings(holdings) {
     const tbody = document.getElementById('holdingsBody');
     if (!holdings || holdings.length === 0) {
@@ -112,6 +96,10 @@ function renderHoldings(holdings) {
     `).join('');
 }
 
+
+// ============================================================
+// ETF涨幅TOP5
+// ============================================================
 function renderETF(etf) {
     const tbody = document.getElementById('etfBody');
     if (!etf || etf.length === 0) {
@@ -128,6 +116,10 @@ function renderETF(etf) {
     `).join('');
 }
 
+
+// ============================================================
+// 行业资金流向
+// ============================================================
 function renderSector(sector) {
     const inflowBody = document.getElementById('sectorInflowBody');
     const outflowBody = document.getElementById('sectorOutflowBody');
@@ -149,6 +141,10 @@ function renderSector(sector) {
     }
 }
 
+
+// ============================================================
+// 图表（盈亏柱状图 + 持仓占比饼图）
+// ============================================================
 function renderCharts(holdings) {
     if (!holdings || holdings.length === 0) return;
     const filtered = holdings.filter(h => h.shares > 0 && h.pnl !== undefined && h.pnl !== null);
@@ -193,7 +189,33 @@ function renderCharts(holdings) {
     }
 }
 
+
+// ============================================================
+// 刷新数据：跳转到 GitHub Actions 页面
+// ============================================================
+function refreshData() {
+    const btn = document.getElementById('refreshBtn');
+    btn.disabled = true;
+    btn.textContent = '⏳ 正在跳转...';
+    btn.className = 'refresh-btn loading';
+    
+    // 跳转到 GitHub Actions 页面
+    window.open('https://github.com/ekiy-863/auto-investment/actions/workflows/daily_report.yml', '_blank');
+    
+    document.getElementById('updateTime').textContent = '📌 请在打开的页面中点击 "Run workflow" 手动触发更新';
+    
+    // 3秒后恢复按钮
+    setTimeout(() => {
+        btn.disabled = false;
+        btn.textContent = '🔄 刷新数据';
+        btn.className = 'refresh-btn';
+    }, 3000);
+}
+
+
+// ============================================================
 // 模拟数据（备选）
+// ============================================================
 function loadMockData() {
     const mock = {
         update_time: new Date().toLocaleString(),
@@ -225,7 +247,10 @@ function loadMockData() {
     document.getElementById('updateTime').textContent = '⚠️ 模拟数据（实际数据加载失败）';
 }
 
-// 启动
+
+// ============================================================
+// 启动：加载数据 + 自动刷新
+// ============================================================
 loadData();
-// 每60秒刷新
+// 每60秒检查一次是否有新数据
 setInterval(loadData, 60000);
