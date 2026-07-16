@@ -10,6 +10,7 @@ from data.news import format_news_for_report, get_news_from_rss
 from analysis.main_line import identify_main_lines, format_main_lines_for_report
 from analysis.fund_alert import generate_fund_alerts, format_alerts_for_report
 from analysis.etf_compare import compare_fund_vs_etf, format_etf_compare_for_report
+from analysis.decision import generate_decisions, check_verification_items, format_decisions_for_report
 
 # 获取运行模式
 MODE = os.environ.get('MODE', 'afternoon')
