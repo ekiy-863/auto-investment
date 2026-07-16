@@ -4,14 +4,14 @@ const colors = ['#22c55e', '#ef4444', '#3b82f6', '#f59e0b', '#8b5cf6', '#ec4899'
 // 加载数据
 async function loadData() {
     try {
-        const resp = await fetch('../data/dashboard.json?t=' + Date.now());
+        const resp = await fetch('https://ekiy-863.github.io/auto-investment/data/dashboard.json?t=' + Date.now());
         if (!resp.ok) throw new Error('数据加载失败');
         const data = await resp.json();
         renderAll(data);
         document.getElementById('updateTime').textContent = '更新时间：' + (data.update_time || new Date().toLocaleString());
     } catch (e) {
         console.warn('加载数据失败:', e);
-        document.getElementById('updateTime').textContent = '⚠️ 数据加载失败，使用模拟数据';
+        document.getElementById('updateTime').textContent = '⚠️ 模拟数据（实际数据加载失败）';
         loadMockData();
     }
 }
