@@ -6,10 +6,11 @@ from data.index import get_main_indexes
 from data.etf import get_etf_top_rank
 from data.sector_flow import get_sector_flow
 from data.tiantian import get_fund_estimate
+from datetime import datetime, timedelta
 
 def generate_dashboard():
     data = {
-        "update_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+       "update_time": (datetime.now() + timedelta(hours=8)).strftime("%Y-%m-%d %H:%M:%S"),
         "indexes": [],
         "holdings": [],
         "etf": [],
