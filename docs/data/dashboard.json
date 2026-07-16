@@ -1,18 +1,6 @@
 {
-  "update_time": "2026-07-16 12:24:27",
+  "update_time": "2026-07-16 12:59:54",
   "indexes": [
-    {
-      "name": "上证指数",
-      "code": "000001.SH",
-      "price": 3923.203,
-      "change_pct": -0.008184644570275191
-    },
-    {
-      "name": "创业板指",
-      "code": "399006.SZ",
-      "price": 3738.959,
-      "change_pct": -0.017279925061187505
-    },
     {
       "name": "深证成指",
       "code": "399001.SZ",
@@ -24,52 +12,64 @@
       "code": "000688.SH",
       "price": 1905.869,
       "change_pct": -0.009564646199034011
+    },
+    {
+      "name": "上证指数",
+      "code": "000001.SH",
+      "price": 3923.203,
+      "change_pct": -0.008184644570275191
+    },
+    {
+      "name": "创业板指",
+      "code": "399006.SZ",
+      "price": 3738.959,
+      "change_pct": -0.017279925061187505
     }
   ],
   "holdings": [
     {
-      "code": "24418",
+      "code": "024418",
       "name": "华夏半导体C",
       "shares": 10000.0,
       "cost_nav": 1.25,
-      "current_nav": 0,
-      "market_value": 0.0,
-      "pnl": -12500.0,
-      "pnl_ratio": -100.0,
-      "change_today": 0
+      "current_nav": 2.5573,
+      "market_value": 25573.0,
+      "pnl": 13073.0,
+      "pnl_ratio": 104.584,
+      "change_today": -3.52
     },
     {
-      "code": "24975",
+      "code": "024975",
       "name": "华泰柏瑞半导体C",
       "shares": 5000.0,
       "cost_nav": 1.38,
-      "current_nav": 0,
-      "market_value": 0.0,
-      "pnl": -6899.999999999999,
-      "pnl_ratio": -100.0,
-      "change_today": 0
+      "current_nav": 2.6625,
+      "market_value": 13312.5,
+      "pnl": 6412.500000000001,
+      "pnl_ratio": 92.93478260869567,
+      "change_today": -3.52
     },
     {
-      "code": "25500",
+      "code": "025500",
       "name": "东方阿尔法科技C",
       "shares": 8000.0,
       "cost_nav": 0.92,
-      "current_nav": 0,
-      "market_value": 0.0,
-      "pnl": -7360.0,
-      "pnl_ratio": -100.0,
-      "change_today": 0
+      "current_nav": 2.0492,
+      "market_value": 16393.6,
+      "pnl": 9033.599999999999,
+      "pnl_ratio": 122.7391304347826,
+      "change_today": -3.48
     },
     {
-      "code": "18816",
+      "code": "018816",
       "name": "方正富邦核心C",
       "shares": 6000.0,
       "cost_nav": 0.85,
-      "current_nav": 0,
-      "market_value": 0.0,
-      "pnl": -5100.0,
-      "pnl_ratio": -100.0,
-      "change_today": 0
+      "current_nav": 2.3764,
+      "market_value": 14258.4,
+      "pnl": 9158.4,
+      "pnl_ratio": 179.57647058823528,
+      "change_today": -3.02
     }
   ],
   "etf": [
@@ -201,7 +201,7 @@
     ]
   },
   "total_cost": 31860.0,
-  "total_market": 0.0,
-  "total_pnl": -31860.0,
-  "total_pnl_ratio": -100.0
+  "total_market": 69537.5,
+  "total_pnl": 37677.5,
+  "total_pnl_ratio": 118.2595731324545
 }
