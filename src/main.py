@@ -214,6 +214,31 @@ print(content)
 print("==============================")
 print("报告已生成")
 
+
+# 在文件顶部添加导入
+from analysis.decision import generate_decisions, check_verification_items, format_decisions_for_report
+
+# 在技术分析之后、标题之前添加决策生成
+print("正在生成投资决策...")
+decisions = generate_decisions(fund_data, tech_results, sector_data, etf_change)
+verification_results = check_verification_items(index_data, sector_data, etf_change, fund_data)
+decision_lines = format_decisions_for_report(decisions, verification_results)
+
+# 在报告组装中，把 decision_lines 插入到技术分析和基金净值之间
+lines = [title, ""]
+lines.extend(index_lines)
+lines.extend(etf_lines)
+lines.extend(sector_lines)
+lines.extend(news_lines)
+lines.extend(main_line_lines)
+lines.extend(etf_compare_lines)
+lines.extend(tech_lines)
+lines.extend(decision_lines)  # ⭐ 新增：决策指令
+lines.append("")
+lines.append("## 📈 基金估算净值")
+# ... 后面不变
+
+
 # ============================================================
 # 13. 微信推送
 # ============================================================
