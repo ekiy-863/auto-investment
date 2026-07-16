@@ -129,3 +129,50 @@ tr:hover td { background: #fafafa; }
 .market-col h4 { margin-top: 0; }
 .market-col table { font-size: 13px; }
 .market-col td { padding: 4px 8px; }
+
+/* ============================================================
+   刷新按钮样式
+   ============================================================ */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.refresh-btn {
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: #f8f9fa;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+.refresh-btn:hover {
+    background: #e9ecef;
+    border-color: #bbb;
+}
+
+.refresh-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.refresh-btn.loading {
+    background: #fff3cd;
+    border-color: #ffc107;
+}
+
+.refresh-btn.success {
+    background: #d4edda;
+    border-color: #28a745;
+}
+
+.refresh-btn.error {
+    background: #f8d7da;
+    border-color: #dc3545;
+}
