@@ -1,29 +1,29 @@
 {
-  "update_time": "2026-07-16 17:00:37",
+  "update_time": "2026-07-17 13:26:11",
   "indexes": [
     {
       "name": "创业板指",
       "code": "399006.SZ",
-      "price": 3692.457,
-      "change_pct": -0.02950216363743416
-    },
-    {
-      "name": "深证成指",
-      "code": "399001.SZ",
-      "price": 14488.654,
-      "change_pct": -0.019672182836688153
+      "price": 3453.407,
+      "change_pct": -0.06474009040592747
     },
     {
       "name": "科创50",
       "code": "000688.SH",
-      "price": 1846.877,
-      "change_pct": -0.04022140298107231
+      "price": 1735.398,
+      "change_pct": -0.0603608144992872
     },
     {
       "name": "上证指数",
       "code": "000001.SH",
-      "price": 3882.413,
-      "change_pct": -0.018496664709936186
+      "price": 3783.358,
+      "change_pct": -0.025513771976345596
+    },
+    {
+      "name": "深证成指",
+      "code": "399001.SZ",
+      "price": 13756.021,
+      "change_pct": -0.05056598080125316
     }
   ],
   "holdings": [
@@ -32,116 +32,116 @@
       "name": "华夏半导体C",
       "shares": 10000.0,
       "cost_nav": 1.25,
-      "current_nav": 2.4651,
-      "market_value": 24651.0,
-      "pnl": 12151.0,
-      "pnl_ratio": 97.208,
-      "change_today": -7.0
+      "current_nav": 2.3433,
+      "market_value": 23433.0,
+      "pnl": 10933.0,
+      "pnl_ratio": 87.46400000000001,
+      "change_today": -4.86
     },
     {
       "code": "024975",
       "name": "华泰柏瑞半导体C",
       "shares": 5000.0,
       "cost_nav": 1.38,
-      "current_nav": 2.5666,
-      "market_value": 12833.000000000002,
-      "pnl": 5933.000000000003,
-      "pnl_ratio": 85.98550724637684,
-      "change_today": -7.0
+      "current_nav": 2.4428,
+      "market_value": 12214.0,
+      "pnl": 5314.000000000001,
+      "pnl_ratio": 77.01449275362322,
+      "change_today": -4.86
     },
     {
       "code": "025500",
       "name": "东方阿尔法科技C",
       "shares": 8000.0,
       "cost_nav": 0.92,
-      "current_nav": 1.9892,
-      "market_value": 15913.6,
-      "pnl": 8553.6,
-      "pnl_ratio": 116.2173913043478,
-      "change_today": -6.3
+      "current_nav": 1.7835,
+      "market_value": 14268.0,
+      "pnl": 6908.0,
+      "pnl_ratio": 93.85869565217392,
+      "change_today": -9.23
     },
     {
       "code": "018816",
       "name": "方正富邦核心C",
       "shares": 6000.0,
       "cost_nav": 0.85,
-      "current_nav": 2.3203,
-      "market_value": 13921.8,
-      "pnl": 8821.8,
-      "pnl_ratio": 172.9764705882353,
-      "change_today": -5.31
+      "current_nav": 2.0767,
+      "market_value": 12460.2,
+      "pnl": 7360.200000000001,
+      "pnl_ratio": 144.31764705882355,
+      "change_today": -9.15
     }
   ],
   "etf": [
     {
-      "code": "513770.SH",
-      "name": "港股互联网ETF华宝",
-      "price": 0.379,
-      "change_pct": 0.04407713498622594,
-      "amount": 12.52651
+      "code": "513350.SH",
+      "name": "标普油气ETF富国",
+      "price": 1.211,
+      "change_pct": 0.028887000849617695,
+      "amount": 17.802835
     },
     {
-      "code": "159121.SZ",
-      "name": "港股通汽车ETF易方达",
-      "price": 0.78,
-      "change_pct": 0.04138851802403208,
-      "amount": 0.493369
+      "code": "560460.SH",
+      "name": "电力ETF平安",
+      "price": 0.893,
+      "change_pct": 0.02057142857142859,
+      "amount": 0.099633
     },
     {
-      "code": "159568.SZ",
-      "name": "港股互联网ETF博时",
-      "price": 1.221,
-      "change_pct": 0.04092071611253201,
-      "amount": 2.58073
+      "code": "561170.SH",
+      "name": "绿色电力ETF富国",
+      "price": 1.131,
+      "change_pct": 0.019837691614066743,
+      "amount": 0.459836
     },
     {
-      "code": "516620.SH",
-      "name": "影视ETF国泰",
-      "price": 0.853,
-      "change_pct": 0.04024390243902429,
-      "amount": 0.694701
+      "code": "159611.SZ",
+      "name": "电力ETF广发",
+      "price": 1.031,
+      "change_pct": 0.019782393669634045,
+      "amount": 7.767318
     },
     {
-      "code": "520910.SH",
-      "name": "港股通互联网ETF华夏",
-      "price": 0.678,
-      "change_pct": 0.039877300613496966,
-      "amount": 1.12486
+      "code": "560580.SH",
+      "name": "电力ETF南方",
+      "price": 1.087,
+      "change_pct": 0.019699812382739126,
+      "amount": 0.284086
     },
     {
-      "code": "159550.SZ",
-      "name": "互联网ETF东财",
-      "price": 0.839,
-      "change_pct": 0.03708281829419025,
-      "amount": 0.176422
+      "code": "560270.SH",
+      "name": "电力ETF工银",
+      "price": 0.937,
+      "change_pct": 0.019586507072905348,
+      "amount": 0.20401
     },
     {
-      "code": "520730.SH",
-      "name": "港股通汽车ETF万家",
-      "price": 0.8160000000000001,
-      "change_pct": 0.03684879288437106,
-      "amount": 0.054699
+      "code": "159518.SZ",
+      "name": "标普油气ETF嘉实",
+      "price": 1.128,
+      "change_pct": 0.018970189701896935,
+      "amount": 4.056498
     },
     {
-      "code": "159239.SZ",
-      "name": "港股通汽车ETF富国",
-      "price": 0.8180000000000001,
-      "change_pct": 0.03675538656527253,
-      "amount": 0.213275
+      "code": "560830.SH",
+      "name": "电力ETF华夏",
+      "price": 0.89,
+      "change_pct": 0.018306636155606425,
+      "amount": 0.331563
     },
     {
-      "code": "520630.SH",
-      "name": "港股通互联网ETF广发",
-      "price": 0.708,
-      "change_pct": 0.03660322108345521,
-      "amount": 1.659167
+      "code": "560190.SH",
+      "name": "公用事业ETF鹏华",
+      "price": 1.011,
+      "change_pct": 0.018126888217522563,
+      "amount": 0.008886
     },
     {
-      "code": "513040.SH",
-      "name": "港股通互联网ETF易方达",
-      "price": 0.995,
-      "change_pct": 0.03645833333333337,
-      "amount": 14.447455
+      "code": "159046.SZ",
+      "name": "绿电ETF天弘",
+      "price": 0.902,
+      "change_pct": 0.01805869074492101,
+      "amount": 0.1009
     }
   ],
   "sector": {
@@ -201,7 +201,7 @@
     ]
   },
   "total_cost": 31860.0,
-  "total_market": 67319.4,
-  "total_pnl": 35459.399999999994,
-  "total_pnl_ratio": 111.29755178907719
+  "total_market": 62375.2,
+  "total_pnl": 30515.199999999997,
+  "total_pnl_ratio": 95.77903327055868
 }
