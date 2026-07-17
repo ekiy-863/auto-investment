@@ -1,29 +1,29 @@
 {
-  "update_time": "2026-07-17 13:26:11",
+  "update_time": "2026-07-17 16:55:55",
   "indexes": [
     {
-      "name": "创业板指",
-      "code": "399006.SZ",
-      "price": 3453.407,
-      "change_pct": -0.06474009040592747
-    },
-    {
-      "name": "科创50",
-      "code": "000688.SH",
-      "price": 1735.398,
-      "change_pct": -0.0603608144992872
+      "name": "深证成指",
+      "code": "399001.SZ",
+      "price": 13706.884,
+      "change_pct": -0.053957393143628136
     },
     {
       "name": "上证指数",
       "code": "000001.SH",
-      "price": 3783.358,
-      "change_pct": -0.025513771976345596
+      "price": 3764.155,
+      "change_pct": -0.03045992273361948
     },
     {
-      "name": "深证成指",
-      "code": "399001.SZ",
-      "price": 13756.021,
-      "change_pct": -0.05056598080125316
+      "name": "创业板指",
+      "code": "399006.SZ",
+      "price": 3428.63,
+      "change_pct": -0.07145025656358349
+    },
+    {
+      "name": "科创50",
+      "code": "000688.SH",
+      "price": 1715.404,
+      "change_pct": -0.07118665725979584
     }
   ],
   "holdings": [
@@ -32,116 +32,116 @@
       "name": "华夏半导体C",
       "shares": 10000.0,
       "cost_nav": 1.25,
-      "current_nav": 2.3433,
-      "market_value": 23433.0,
-      "pnl": 10933.0,
-      "pnl_ratio": 87.46400000000001,
-      "change_today": -4.86
+      "current_nav": 2.2942,
+      "market_value": 22942.0,
+      "pnl": 10442.0,
+      "pnl_ratio": 83.536,
+      "change_today": -6.86
     },
     {
       "code": "024975",
       "name": "华泰柏瑞半导体C",
       "shares": 5000.0,
       "cost_nav": 1.38,
-      "current_nav": 2.4428,
-      "market_value": 12214.0,
-      "pnl": 5314.000000000001,
-      "pnl_ratio": 77.01449275362322,
-      "change_today": -4.86
+      "current_nav": 2.3916,
+      "market_value": 11958.0,
+      "pnl": 5058.000000000001,
+      "pnl_ratio": 73.30434782608697,
+      "change_today": -6.86
     },
     {
       "code": "025500",
       "name": "东方阿尔法科技C",
       "shares": 8000.0,
       "cost_nav": 0.92,
-      "current_nav": 1.7835,
-      "market_value": 14268.0,
-      "pnl": 6908.0,
-      "pnl_ratio": 93.85869565217392,
-      "change_today": -9.23
+      "current_nav": 1.758,
+      "market_value": 14064.0,
+      "pnl": 6704.0,
+      "pnl_ratio": 91.08695652173913,
+      "change_today": -10.53
     },
     {
       "code": "018816",
       "name": "方正富邦核心C",
       "shares": 6000.0,
       "cost_nav": 0.85,
-      "current_nav": 2.0767,
-      "market_value": 12460.2,
-      "pnl": 7360.200000000001,
-      "pnl_ratio": 144.31764705882355,
-      "change_today": -9.15
+      "current_nav": 2.0403,
+      "market_value": 12241.8,
+      "pnl": 7141.799999999999,
+      "pnl_ratio": 140.03529411764703,
+      "change_today": -10.74
     }
   ],
   "etf": [
     {
+      "code": "560580.SH",
+      "name": "电力ETF南方",
+      "price": 1.094,
+      "change_pct": 0.026266416510318972,
+      "amount": 0.429702
+    },
+    {
       "code": "513350.SH",
       "name": "标普油气ETF富国",
-      "price": 1.211,
-      "change_pct": 0.028887000849617695,
-      "amount": 17.802835
-    },
-    {
-      "code": "560460.SH",
-      "name": "电力ETF平安",
-      "price": 0.893,
-      "change_pct": 0.02057142857142859,
-      "amount": 0.099633
-    },
-    {
-      "code": "561170.SH",
-      "name": "绿色电力ETF富国",
-      "price": 1.131,
-      "change_pct": 0.019837691614066743,
-      "amount": 0.459836
+      "price": 1.203,
+      "change_pct": 0.022090059473237063,
+      "amount": 28.060777
     },
     {
       "code": "159611.SZ",
       "name": "电力ETF广发",
-      "price": 1.031,
-      "change_pct": 0.019782393669634045,
-      "amount": 7.767318
+      "price": 1.033,
+      "change_pct": 0.02176063303659745,
+      "amount": 10.611681
     },
     {
-      "code": "560580.SH",
-      "name": "电力ETF南方",
-      "price": 1.087,
-      "change_pct": 0.019699812382739126,
-      "amount": 0.284086
+      "code": "560930.SH",
+      "name": "电力ETF易方达",
+      "price": 0.873,
+      "change_pct": 0.01985981308411217,
+      "amount": 0.350651
     },
     {
       "code": "560270.SH",
       "name": "电力ETF工银",
       "price": 0.937,
       "change_pct": 0.019586507072905348,
-      "amount": 0.20401
+      "amount": 0.325476
     },
     {
-      "code": "159518.SZ",
-      "name": "标普油气ETF嘉实",
-      "price": 1.128,
-      "change_pct": 0.018970189701896935,
-      "amount": 4.056498
+      "code": "159158.SZ",
+      "name": "电力ETF景顺",
+      "price": 0.992,
+      "change_pct": 0.019527235354573503,
+      "amount": 0.703384
     },
     {
-      "code": "560830.SH",
-      "name": "电力ETF华夏",
-      "price": 0.89,
-      "change_pct": 0.018306636155606425,
-      "amount": 0.331563
+      "code": "159146.SZ",
+      "name": "电力ETF华宝",
+      "price": 1.0,
+      "change_pct": 0.01936799184505608,
+      "amount": 0.49262
     },
     {
-      "code": "560190.SH",
-      "name": "公用事业ETF鹏华",
-      "price": 1.011,
-      "change_pct": 0.018126888217522563,
-      "amount": 0.008886
+      "code": "512140.SH",
+      "name": "电力ETF华安",
+      "price": 0.909,
+      "change_pct": 0.019058295964125577,
+      "amount": 0.252149
     },
     {
-      "code": "159046.SZ",
-      "name": "绿电ETF天弘",
-      "price": 0.902,
-      "change_pct": 0.01805869074492101,
-      "amount": 0.1009
+      "code": "561170.SH",
+      "name": "绿色电力ETF富国",
+      "price": 1.13,
+      "change_pct": 0.01893597835888179,
+      "amount": 0.644223
+    },
+    {
+      "code": "159625.SZ",
+      "name": "绿色电力ETF嘉实",
+      "price": 1.194,
+      "change_pct": 0.018771331058020497,
+      "amount": 1.051318
     }
   ],
   "sector": {
@@ -201,7 +201,7 @@
     ]
   },
   "total_cost": 31860.0,
-  "total_market": 62375.2,
-  "total_pnl": 30515.199999999997,
-  "total_pnl_ratio": 95.77903327055868
+  "total_market": 61205.8,
+  "total_pnl": 29345.800000000003,
+  "total_pnl_ratio": 92.10860012554929
 }
