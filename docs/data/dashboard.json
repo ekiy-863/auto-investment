@@ -1,149 +1,53 @@
 {
-  "update_time": "2026-07-20 13:53:06",
-  "indexes": [
-    {
-      "name": "深证成指",
-      "code": "399001.SZ",
-      "price": 13457.56,
-      "change_pct": -0.018189692128422516
-    },
-    {
-      "name": "科创50",
-      "code": "000688.SH",
-      "price": 1664.122,
-      "change_pct": -0.029894998495981078
-    },
-    {
-      "name": "上证指数",
-      "code": "000001.SH",
-      "price": 3756.526,
-      "change_pct": -0.00202674969548288
-    },
-    {
-      "name": "创业板指",
-      "code": "399006.SZ",
-      "price": 3389.86,
-      "change_pct": -0.011307723493056988
-    }
-  ],
+  "update_time": "2026-07-20 17:44:48",
+  "indexes": [],
   "holdings": [
     {
       "code": "024418",
       "name": "华夏半导体C",
       "shares": 10000.0,
       "cost_nav": 1.25,
-      "current_nav": 2.1471,
-      "market_value": 21471.0,
-      "pnl": 8971.0,
-      "pnl_ratio": 71.768,
-      "change_today": -6.19
+      "current_nav": 0,
+      "market_value": 0.0,
+      "pnl": -12500.0,
+      "pnl_ratio": -100.0,
+      "change_today": 0
     },
     {
       "code": "024975",
       "name": "华泰柏瑞半导体C",
       "shares": 5000.0,
       "cost_nav": 1.38,
-      "current_nav": 2.244,
-      "market_value": 11220.000000000002,
-      "pnl": 4320.000000000003,
-      "pnl_ratio": 62.60869565217394,
-      "change_today": -6.19
+      "current_nav": 0,
+      "market_value": 0.0,
+      "pnl": -6899.999999999999,
+      "pnl_ratio": -100.0,
+      "change_today": 0
     },
     {
       "code": "025500",
       "name": "东方阿尔法科技C",
       "shares": 8000.0,
       "cost_nav": 0.92,
-      "current_nav": 1.62,
-      "market_value": 12960.0,
-      "pnl": 5600.0,
-      "pnl_ratio": 76.08695652173914,
-      "change_today": -5.78
+      "current_nav": 0,
+      "market_value": 0.0,
+      "pnl": -7360.0,
+      "pnl_ratio": -100.0,
+      "change_today": 0
     },
     {
       "code": "018816",
       "name": "方正富邦核心C",
       "shares": 6000.0,
       "cost_nav": 0.85,
-      "current_nav": 1.8865,
-      "market_value": 11319.0,
-      "pnl": 6219.0,
-      "pnl_ratio": 121.94117647058826,
-      "change_today": -5.96
+      "current_nav": 0,
+      "market_value": 0.0,
+      "pnl": -5100.0,
+      "pnl_ratio": -100.0,
+      "change_today": 0
     }
   ],
-  "etf": [
-    {
-      "code": "159518.SZ",
-      "name": "标普油气ETF嘉实",
-      "price": 1.211,
-      "change_pct": 0.07644444444444451,
-      "amount": 9.726614
-    },
-    {
-      "code": "513350.SH",
-      "name": "标普油气ETF富国",
-      "price": 1.286,
-      "change_pct": 0.06899418121363254,
-      "amount": 21.326465
-    },
-    {
-      "code": "561790.SH",
-      "name": "央企能源ETF博时",
-      "price": 1.272,
-      "change_pct": 0.061769616026711244,
-      "amount": 0.020393
-    },
-    {
-      "code": "515220.SH",
-      "name": "煤炭ETF国泰",
-      "price": 1.202,
-      "change_pct": 0.05623901581722325,
-      "amount": 8.911771
-    },
-    {
-      "code": "159945.SZ",
-      "name": "能源ETF广发",
-      "price": 1.308,
-      "change_pct": 0.05060240963855417,
-      "amount": 0.129423
-    },
-    {
-      "code": "159930.SZ",
-      "name": "能源ETF汇添富",
-      "price": 1.648,
-      "change_pct": 0.05035054174633522,
-      "amount": 1.261876
-    },
-    {
-      "code": "560810.SH",
-      "name": "央企ESGETF融通",
-      "price": 1.263,
-      "change_pct": 0.049003322259136166,
-      "amount": 0.047453
-    },
-    {
-      "code": "561200.SH",
-      "name": "中证A100ETF工银",
-      "price": 1.499,
-      "change_pct": 0.04024982650936853,
-      "amount": 0.028151
-    },
-    {
-      "code": "159251.SZ",
-      "name": "港股通科技ETF万家",
-      "price": 0.78,
-      "change_pct": 0.040000000000000036,
-      "amount": 0.952992
-    },
-    {
-      "code": "159981.SZ",
-      "name": "能源化工ETF建信",
-      "price": 1.538,
-      "change_pct": 0.03989181879648407,
-      "amount": 3.775147
-    }
-  ],
+  "etf": [],
   "sector": {
     "top_inflow": [
       {
@@ -201,7 +105,7 @@
     ]
   },
   "total_cost": 31860.0,
-  "total_market": 56970.0,
-  "total_pnl": 25110.0,
-  "total_pnl_ratio": 78.8135593220339
+  "total_market": 0.0,
+  "total_pnl": -31860.0,
+  "total_pnl_ratio": -100.0
 }
